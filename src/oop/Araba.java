@@ -73,4 +73,11 @@ public abstract class Araba {
     
     public abstract void hizlan(int hiz);
     
+    @Override
+    public String toString(){
+        String className = this.getClass().getName();
+        className += " " + this.model + " Max Speed: " + this.maxHiz;
+        return className;
+    }
+    
 }
